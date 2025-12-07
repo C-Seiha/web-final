@@ -1,60 +1,401 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/index.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Loofah & Co. — Natural Loofah Soap & Sponges</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
-    <header>
-        <div class="logo">LOOFAH</div>
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="index.html" class="logo"><img src="assets/images/dalogo1.png" alt="Loofah Logo"></a>
+    
+    <!-- Mobile menu toggle button -->
+    <button class="menu-toggle" aria-label="Menu">
+      <i class="fas fa-bars"></i>
+    </button>
+    
+    <nav class="main-nav">
+      <ul>
+        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="quality.html">Quality</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="shop.html">Shop</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-
-        <div class="header-menu-btn">☰</div>
-    </header>
-
-
-    <main>
-        <div class="rotating-image">
-            <div>
-                <h1>NATURAL DISHWASHING SPONGE</h1>
-
-                <p>Dishwashing sponges are made in a thin, rectangular shape that makes them simple to use and store. Eventhough it is tough, no scratches are left behind. After utilizing this natural sponge, we can assure you that you will have an entirely different experience. </p>
-            </div>
-
-            <img src="assets/images/dish-washing-sponge.png">
-
-            <div>
-                <h1>BODY SCRUB SPONGE</h1>
-
-                <p>The body scrub sponge is made to be simple to use; it comes with a rubber pad that is easily accessed by all four fingers during scrubbing. Although this item is made of cotton, it can effectively clean the skin without irritating or scratching it.</p>
-            </div>
-
-            <img src="assets/images/body-scrub-sponge.png">
-            
-
-            <div>
-                <h1>SOAP BAR AND NATURAL SPONGE</h1>
-
-                <p>When consumers choose a product that is a sponge that also includes soap (2 in 1), they might have a fresh experience. It's convenient for people who enjoy using soap because you can scrub and get rid of old cells at the same time.
-                </p>
-            </div>
-
-            <img src="assets/images/soap-bar-and-natural-sponge.png">
+ <section class="hero-slider">
+  <div class="slides">
+    <div class="slide">
+      <div class="slide-content container">
+        <div class="slide-text">
+          <h1>Natural Dishwashing Sponge</h1>
+          <p>Replace plastic sponges with durable, compostable loofah dish sponges — naturally abrasive and gentle on surfaces.</p>
+          <a class="btn" href="contact.html">Contact</a>
         </div>
-    </main>
+        <div class="slide-image">
+          <img src="assets/images/dish-washing-sponge.png" alt="Dishwashing Sponge">
+        </div>
+      </div>
+    </div>
 
-    <footer>
-        
-    </footer>
+    <div class="slide">
+      <div class="slide-content container">
+        <div class="slide-text">
+          <h1>Body Scrub Sponge</h1>
+          <p>Natural exfoliation for healthy skin. Our loofah scrub sponges are handcrafted, chemical-free and long-lasting.</p>
+          <a class="btn" href="contact.html">Contact</a>
+        </div>
+        <div class="slide-image">
+          <img src="assets/images/product4.png" alt="Body Scrub Sponge">
+        </div>
+      </div>
+    </div>
+
+    <div class="slide">
+      <div class="slide-content container">
+        <div class="slide-text">
+          <h1>Soap Bar + Loofah (2-in-1)</h1>
+          <p>Dual-purpose—cleanse and exfoliate in one step. 100% biodegradable and carefully paired with natural soap bars.</p>
+          <a class="btn" href="contact.html">Contact</a>
+        </div>
+        <div class="slide-image">
+          <img src="assets/images/producttest.png" alt="Soap + Loofah">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation buttons -->
+  <button class="slider-btn prev">❮</button>
+  <button class="slider-btn next">❯</button>
+</section>
+
+
+  <!-- ABOUT BLURB -->
+  <section class="about-blurb">
+    <div class="container grid-2">
+      <div>
+        <h2>Why Choose Loofah?</h2>
+        <p>Loofah sponges are natural, renewable, and biodegradable. They offer excellent exfoliation for the body and reliable scrubbing power for kitchen use — all while being gentle on the environment.</p>
+        <ul class="benefits">
+          <li>Durable and long-lasting</li>
+          <li>Biodegradable & compostable</li>
+          <li>Free from plastic microfibers</li>
+          <li>Natural texture for gentle exfoliation</li>
+        </ul>
+      </div>
+      <div class="about-image">
+        <img src="assets/images/product1.png" alt="Loofah benefits">
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTS GRID -->
+  <section class="products container">
+    <h2>Featured Products</h2>
+    <div class="product-grid">
+      <article class="product">
+        <img src="assets/images/product1.png" alt="Loofah Sponge 1">
+        <h3>Natural Dish Sponge</h3>
+        <p>Set of 2 — compostable and durable.</p>
+      </article>
+      <article class="product">
+        <img src="assets/images/product2.png" alt="Loofah Sponge 2">
+        <h3>Body Scrub Loofah</h3>
+        <p>Handy size for gentle exfoliation.</p>
+      </article>
+      <article class="product">
+        <img src="assets/images/product3.png" alt="Loofah Soap">
+        <h3>Soap Bar + Loofah</h3>
+        <p>2-in-1 soap and loofah bar.</p>
+      </article>
+      <article class="product">
+        <img src="assets/images/product4.png" alt="Loofah Set">
+        <h3>Loofah Gift Set</h3>
+        <p>Perfect starter pack for eco-friendly homes.</p>
+      </article>
+    </div>
+    <div class="center"><a class="btn" href="shop.html">View Shop</a></div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container grid-3 footer-inner">
+      <div>
+        <img src="assets/images/lastpage1.png" alt="logo" class="footer-logo">
+        <p>Loofah & Co. — natural, simple, sustainable.</p>
+      </div>
+      <div>
+        <h4>Address</h4>
+        <p>123 Green Lane, Toul Kork, Phnom Penh, Cambodia</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul class="footer-links">
+          <li><a href="about.html">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="quality.html">Quality</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">&copy; <span id="year"></span> Loofah & Co. All rights reserved.</div>
+  </footer>
+
+  <script>
+// Update copyright year
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Hero Slider Functionality
+let currentSlide = 0;
+const slides = document.querySelector('.slides');
+const totalSlides = document.querySelectorAll('.slide').length;
+const heroSlider = document.querySelector('.hero-slider');
+let slideInterval;
+
+// Initialize slider on page load
+function initSlider() {
+  if (totalSlides > 0) {
+    updateSlider();
+    startAutoSlide();
+  }
+}
+
+// Update slider position
+function updateSlider() {
+  if (slides) {
+    slides.style.transform = `translateX(-${currentSlide * 100}%)`;
+  }
+}
+
+// Next slide
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % totalSlides;
+  updateSlider();
+}
+
+// Previous slide
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+  updateSlider();
+}
+
+// Auto-slide functionality
+function startAutoSlide() {
+  if (totalSlides > 1) {
+    stopAutoSlide(); // Clear any existing interval
+    slideInterval = setInterval(() => {
+      nextSlide();
+    }, 5000); // Change slide every 5 seconds
+  }
+}
+
+function stopAutoSlide() {
+  if (slideInterval) {
+    clearInterval(slideInterval);
+  }
+}
+
+// Mobile Menu Functionality
+const menuToggle = document.querySelector('.menu-toggle');
+const mainNav = document.querySelector('.main-nav');
+
+function initMobileMenu() {
+  if (menuToggle && mainNav) {
+    menuToggle.addEventListener('click', () => {
+      mainNav.classList.toggle('active');
+      
+      // Change icon
+      const icon = menuToggle.querySelector('i');
+      if (mainNav.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+        // Prevent body scroll when menu is open
+        document.body.style.overflow = 'hidden';
+      } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+        // Restore body scroll
+        document.body.style.overflow = '';
+      }
+    });
+    
+    // Close menu when clicking on a link
+    document.querySelectorAll('.main-nav a').forEach(link => {
+      link.addEventListener('click', () => {
+        mainNav.classList.remove('active');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+        document.body.style.overflow = ''; // Restore body scroll
+      });
+    });
+    
+    // Close menu when clicking outside
+    document.addEventListener('click', (e) => {
+      if (mainNav.classList.contains('active') && 
+          !mainNav.contains(e.target) && 
+          !menuToggle.contains(e.target)) {
+        mainNav.classList.remove('active');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+}
+  document.body.style.overflow = 'auto';
+  document.documentElement.style.overflow = 'auto';
+
+// Responsive layout updates
+function updateSliderLayout() {
+  if (heroSlider) {
+    if (window.innerWidth <= 899) {
+      // Mobile layout
+      heroSlider.style.minHeight = 'auto';
+      const slideElements = document.querySelectorAll('.slide');
+      slideElements.forEach(slide => {
+        slide.style.minHeight = 'auto';
+      });
+    } else {
+      // Desktop layout
+      heroSlider.style.minHeight = '85vh';
+    }
+  }
+}
+
+// Window resize handler
+let resizeTimer;
+function handleResize() {
+  // Prevent transitions during resize
+  document.body.classList.add('resize-active');
+  clearTimeout(resizeTimer);
+  
+  resizeTimer = setTimeout(() => {
+    document.body.classList.remove('resize-active');
+    updateSliderLayout();
+  }, 250);
+}
+
+// Event Listeners Setup
+function setupEventListeners() {
+  // Slider buttons
+  const nextBtn = document.querySelector('.next');
+  const prevBtn = document.querySelector('.prev');
+  
+  if (nextBtn) {
+    nextBtn.addEventListener('click', () => {
+      stopAutoSlide();
+      nextSlide();
+      startAutoSlide();
+    });
+  }
+  
+  if (prevBtn) {
+    prevBtn.addEventListener('click', () => {
+      stopAutoSlide();
+      prevSlide();
+      startAutoSlide();
+    });
+  }
+  
+  // Pause auto-slide on interaction
+  if (heroSlider) {
+    heroSlider.addEventListener('mouseenter', stopAutoSlide);
+    heroSlider.addEventListener('mouseleave', startAutoSlide);
+    heroSlider.addEventListener('touchstart', stopAutoSlide);
+    heroSlider.addEventListener('touchend', startAutoSlide);
+  }
+  
+  // Pause auto-slide when window loses focus
+  window.addEventListener('focus', startAutoSlide);
+  window.addEventListener('blur', stopAutoSlide);
+  
+  // Handle window resize
+  window.addEventListener('resize', handleResize);
+}
+
+// Initialize everything when DOM is loaded
+document.addEventListener('DOMContentLoaded', () => {
+  // Initialize slider
+  initSlider();
+  
+  // Initialize mobile menu
+  initMobileMenu();
+  
+  // Setup event listeners
+  setupEventListeners();
+  
+  // Initial layout update
+  updateSliderLayout();
+});
+
+// Add keyboard navigation for accessibility
+document.addEventListener('keydown', (e) => {
+  if (e.key === 'ArrowRight') {
+    stopAutoSlide();
+    nextSlide();
+    startAutoSlide();
+  } else if (e.key === 'ArrowLeft') {
+    stopAutoSlide();
+    prevSlide();
+    startAutoSlide();
+  } else if (e.key === 'Escape' && mainNav && mainNav.classList.contains('active')) {
+    // Close mobile menu with Escape key
+    mainNav.classList.remove('active');
+    const icon = menuToggle.querySelector('i');
+    if (icon) {
+      icon.classList.remove('fa-times');
+      icon.classList.add('fa-bars');
+    }
+    document.body.style.overflow = '';
+  }
+});
+
+// Add swipe support for mobile
+let touchStartX = 0;
+let touchEndX = 0;
+
+if (heroSlider) {
+  heroSlider.addEventListener('touchstart', (e) => {
+    touchStartX = e.changedTouches[0].screenX;
+  }, { passive: true });
+
+  heroSlider.addEventListener('touchend', (e) => {
+    touchEndX = e.changedTouches[0].screenX;
+    handleSwipe();
+  }, { passive: true });
+}
+
+function handleSwipe() {
+  const swipeThreshold = 50; // Minimum swipe distance in pixels
+  
+  if (touchStartX - touchEndX > swipeThreshold) {
+    // Swipe left - next slide
+    stopAutoSlide();
+    nextSlide();
+    startAutoSlide();
+  } else if (touchEndX - touchStartX > swipeThreshold) {
+    // Swipe right - previous slide
+    stopAutoSlide();
+    prevSlide();
+    startAutoSlide();
+  }
+}
+</script>
 </body>
 </html>

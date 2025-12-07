@@ -1,60 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="assets/css/index.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — Loofah & Co.</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 <body>
-    <header>
-        <div class="logo">LOOFAH</div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img src="assets/images/dalogo1.png" alt="logo"></a>
+      <!-- Mobile menu toggle button -->
+      <button class="menu-toggle" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html" class="active">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="quality.html">Quality</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="shop.html">Shop</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+  <section class="page-hero">
+    <div class="container">
+      <h1>About Our Product</h1>
+      <p>Natural loofah products made responsibly.</p>
+    </div>
+  </section>
 
-        <div class="header-menu-btn">☰</div>
-    </header>
+  <section class="about-detail container grid-2">
+    <div class="about-text">
+      <h2>Built to Last, Designed for the Earth</h2>
+      <p>Our loofah products are harvested and processed with minimal intervention — preserving natural fibers and their remarkable durability. Below are the key attributes:</p>
+      <ul>
+        <li><strong>Durability:</strong> Loofah fibers are resilient and keep their scrubbing power after many uses when properly cared for.</li>
+        <li><strong>Eco-friendliness:</strong> 100% plant-based, renewable and compostable—no microplastics or synthetic fillers.</li>
+        <li><strong>Hygiene benefits:</strong> Natural fiber allows fast drying and air circulation that reduces bacterial growth compared to wet synthetic sponges.</li>
+        <li><strong>Biodegradable properties:</strong> When it's time to replace, the loofah returns to the soil naturally.</li>
+      </ul>
+    </div>
+    <div class="about-photo">
+      <img src="assets/images/lastpage1.png" alt="loofah close up">
+    </div>
+  </section>
 
-
-    <main>
-        <div class="rotating-image">
-            <div>
-                <h1>NATURAL DISHWASHING SPONGE</h1>
-
-                <p>Dishwashing sponges are made in a thin, rectangular shape that makes them simple to use and store. Eventhough it is tough, no scratches are left behind. After utilizing this natural sponge, we can assure you that you will have an entirely different experience. </p>
-            </div>
-
-            <img src="assets/images/dish-washing-sponge.png">
-
-            <div>
-                <h1>BODY SCRUB SPONGE</h1>
-
-                <p>The body scrub sponge is made to be simple to use; it comes with a rubber pad that is easily accessed by all four fingers during scrubbing. Although this item is made of cotton, it can effectively clean the skin without irritating or scratching it.</p>
-            </div>
-
-            <img src="assets/images/body-scrub-sponge.png">
-            
-
-            <div>
-                <h1>SOAP BAR AND NATURAL SPONGE</h1>
-
-                <p>When consumers choose a product that is a sponge that also includes soap (2 in 1), they might have a fresh experience. It's convenient for people who enjoy using soap because you can scrub and get rid of old cells at the same time.
-                </p>
-            </div>
-
-            <img src="assets/images/soap-bar-and-natural-sponge.png">
+  <footer class="site-footer">
+    <div class="container grid-3 footer-inner">
+      <div>
+        <img src="assets/images/lastpage1.png" alt="logo" class="footer-logo">
+        <p>Loofah & Co. — natural, simple, sustainable.</p>
+      </div>
+      <div>
+        <h4>Address</h4>
+        <p>123 Green Lane, Toul Kork, Phnom Penh, Cambodia</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="quality.html">Quality</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
         </div>
-    </main>
+      </div>
+    </div>
+    <div class="container copyright">&copy; <span id="year2"></span> Loofah & Co. All rights reserved.</div>
+  </footer>
 
-    <footer>
-        
-    </footer>
+<script>
+// Update copyright year (adjust ID based on page)
+document.getElementById('year2').textContent = new Date().getFullYear();
+// Change 'year' to match your ID: 'year2', 'year3', etc. for different pages
+
+// Mobile Menu Functionality
+const menuToggle = document.querySelector('.menu-toggle');
+const mainNav = document.querySelector('.main-nav');
+
+// Initialize mobile menu when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // Add click event to menu toggle button
+  if (menuToggle && mainNav) {
+    menuToggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      // Toggle the 'active' class on the navigation
+      mainNav.classList.toggle('active');
+      
+      // Change the icon from bars to times (X)
+      const icon = menuToggle.querySelector('i');
+      if (mainNav.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+        // Prevent body scroll when menu is open
+        document.body.style.overflow = 'hidden';
+      } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+        // Restore body scroll when menu is closed
+        document.body.style.overflow = '';
+      }
+    });
+    
+    // Close menu when clicking on any navigation link
+    const navLinks = document.querySelectorAll('.main-nav a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        mainNav.classList.remove('active');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+        document.body.style.overflow = '';
+      });
+    });
+    
+    // Close menu when clicking outside of it
+    document.addEventListener('click', function(e) {
+      if (mainNav.classList.contains('active') && 
+          !mainNav.contains(e.target) && 
+          !menuToggle.contains(e.target)) {
+        mainNav.classList.remove('active');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+        document.body.style.overflow = '';
+      }
+    });
+    
+    // Close menu with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && mainNav.classList.contains('active')) {
+        mainNav.classList.remove('active');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+});
+
+  document.body.style.overflow = 'auto';
+  document.documentElement.style.overflow = 'auto';
+// Also run immediately if DOM is already loaded
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', function() {
+    if (menuToggle && mainNav) {
+      menuToggle.click(); // This line is just for initialization, remove if causing issues
+    }
+  });
+} else {
+  // DOM already loaded
+  if (menuToggle && mainNav) {
+    menuToggle.click(); // This line is just for initialization, remove if causing issues
+  }
+}
+</script>
 </body>
 </html>

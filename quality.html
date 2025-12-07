@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quality — Loofah & Co.</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo"><img src="assets/images/dalogo1.png" alt="logo"></a>
+      <!-- Mobile menu toggle button -->
+      <button class="menu-toggle" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="quality.html" class="active">Quality</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Products for sale</h1>
+      <p>Quality you can trust — handpicked and inspected.</p>
+    </div>
+  </section>
+
+<section class="products container">
+  <h2>Our Premium Collection</h2>
+  <div class="product-grid">
+    <article class="product">
+      <img src="assets/images/product1.png" alt="Natural Dish Sponge">
+      <h3>Dish Sponges</h3>
+      <p>Compostable & durable</p>
+    </article>
+    <article class="product">
+      <img src="assets/images/product2.png" alt="Loofah Set">
+      <h3>Loofah Set</h3>
+      <p>Complete collection</p>
+    </article>
+    <article class="product">
+      <img src="assets/images/product3.png" alt="Washcloth">
+      <h3>Washcloth</h3>
+      <p>Gentle exfoliation</p>
+    </article>
+    <article class="product">
+      <img src="assets/images/product4.png" alt="Body Scrub">
+      <h3>Body Scrub</h3>
+      <p>Natural exfoliation</p>
+    </article>
+    <article class="product">
+      <img src="assets/images/product5.png" alt="Soap">
+      <h3>Natural Soap</h3>
+      <p>100% biodegradable</p>
+    </article>
+  </div>
+  <div class="center"><a class="btn" href="shop.html">See More Products</a></div>
+</section>
+
+  <footer class="site-footer">
+    <div class="container grid-3 footer-inner">
+      <div>
+        <img src="assets/images/lastpage1.png" alt="logo" class="footer-logo">
+        <p>Loofah & Co. — natural, simple, sustainable.</p>
+      </div>
+      <div>
+        <h4>Address</h4>
+        <p>123 Green Lane, Toul Kork, Phnom Penh, Cambodia</p>
+      </div>
+      <div>
+        <h4>Links</h4>
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="shop.html">Shop</a></li>
+        </ul>
+        <div class="socials">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="container copyright">&copy; <span id="year4"></span> Loofah & Co. All rights reserved.</div>
+  </footer>
+
+<script>
+// Update copyright year (adjust ID based on page)
+document.getElementById('year4').textContent = new Date().getFullYear();
+// Change 'year' to match your ID: 'year2', 'year3', etc. for different pages
+
+// Mobile Menu Functionality
+const menuToggle = document.querySelector('.menu-toggle');
+const mainNav = document.querySelector('.main-nav');
+
+// Initialize mobile menu when DOM is loaded
+document.addEventListener('DOMContentLoaded', function() {
+  // Add click event to menu toggle button
+  if (menuToggle && mainNav) {
+    menuToggle.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+      
+      // Toggle the 'active' class on the navigation
+      mainNav.classList.toggle('active');
+      
+      // Change the icon from bars to times (X)
+      const icon = menuToggle.querySelector('i');
+      if (mainNav.classList.contains('active')) {
+        icon.classList.remove('fa-bars');
+        icon.classList.add('fa-times');
+        // Prevent body scroll when menu is open
+        document.body.style.overflow = 'hidden';
+      } else {
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+        // Restore body scroll when menu is closed
+        document.body.style.overflow = '';
+      }
+    });
+    
+    // Close menu when clicking on any navigation link
+    const navLinks = document.querySelectorAll('.main-nav a');
+    navLinks.forEach(link => {
+      link.addEventListener('click', function() {
+        mainNav.classList.remove('active');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+        document.body.style.overflow = '';
+      });
+    });
+    
+    // Close menu when clicking outside of it
+    document.addEventListener('click', function(e) {
+      if (mainNav.classList.contains('active') && 
+          !mainNav.contains(e.target) && 
+          !menuToggle.contains(e.target)) {
+        mainNav.classList.remove('active');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+        document.body.style.overflow = '';
+      }
+    });
+    
+    // Close menu with Escape key
+    document.addEventListener('keydown', function(e) {
+      if (e.key === 'Escape' && mainNav.classList.contains('active')) {
+        mainNav.classList.remove('active');
+        const icon = menuToggle.querySelector('i');
+        icon.classList.remove('fa-times');
+        icon.classList.add('fa-bars');
+        document.body.style.overflow = '';
+      }
+    });
+  }
+});
+
+  document.body.style.overflow = 'auto';
+  document.documentElement.style.overflow = 'auto';
+// Also run immediately if DOM is already loaded
+if (document.readyState === 'loading') {
+  document.addEventListener('DOMContentLoaded', function() {
+    if (menuToggle && mainNav) {
+      menuToggle.click(); // This line is just for initialization, remove if causing issues
+    }
+  });
+} else {
+  // DOM already loaded
+  if (menuToggle && mainNav) {
+    menuToggle.click(); // This line is just for initialization, remove if causing issues
+  }
+}
+</script>
+</body>
+</html>
