@@ -678,13 +678,14 @@ section {
   }
 }
 
-
+.big-banner{
+  padding-top: 0rem 0;
+}
 
 /* --------------------------------------- */
 /* RESPONSIVE BREAKPOINTS - COMPREHENSIVE */
 /* --------------------------------------- */
 
-/* LARGE DESKTOPS (1400px and above) */
 @media (min-width: 1400px) {
   .container {
     max-width: 1320px;
@@ -696,9 +697,6 @@ section {
   }
 }
 
-/* DESKTOP (1200px - 1399px) - Default styles apply */
-
-/* SMALL DESKTOP / LARGE TABLET (1024px - 1199px) */
 @media (max-width: 1199px) {
   .slide-content {
     gap: 3rem;
@@ -714,7 +712,6 @@ section {
   }
 }
 
-/* TABLET LANDSCAPE (900px - 1023px) */
 @media (max-width: 1023px) {
   .hero-slider {
     min-height: 75vh;
@@ -738,7 +735,6 @@ section {
   }
 }
 
-/* TABLET PORTRAIT (768px - 899px) - MOBILE MENU ACTIVATES HERE */
 @media (max-width: 899px) {
   /* Mobile Menu Toggle */
   .menu-toggle {
@@ -850,7 +846,6 @@ section {
   }
 }
 
-/* LARGE MOBILE (600px - 767px) */
 @media (max-width: 767px) {
   .container {
     padding: 0 1.5rem;
